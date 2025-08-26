@@ -7,5 +7,10 @@
 </head>
 <body>
     <h1><%= message %></h1>
+    <ul>
+        <% products.forEach(function(product){ %>
+            <li><%= product.name %> - R$<%= product.price.toFixed(2) %></li>
+        <% }); %>
+    </ul>
 </body>
 </html>
